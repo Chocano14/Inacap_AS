@@ -35,28 +35,21 @@
             android:layout_height="120dp"
             android:id="@+id/BtnAsistencia"
             android:layout_gravity="center_horizontal|top"
-            android:background="@drawable/Asistencia" />
+            android:background="@drawable/asistencia1" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="120dp"
             android:id="@+id/BtnHorario"
             android:layout_gravity="right|top"
-            android:background="@drawable/HORARIO1" />
+            android:background="@drawable/orario1" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="120dp"
             android:id="@+id/BtnCorreo"
             android:layout_gravity="left|center_vertical"
-            android:background="@drawable/Mail" />
-
-        <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="130dp"
-            android:id="@+id/BtnPagos"
-            android:layout_gravity="right|center_vertical"
-            android:background="@mipmap/Pagos" />
+            android:background="@drawable/mail23" />
 
     </FrameLayout>
 
