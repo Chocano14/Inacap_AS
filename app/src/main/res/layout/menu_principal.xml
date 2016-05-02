@@ -14,45 +14,47 @@
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
         android:textColor="#ff0000"
-        android:layout_row="0"
-        android:layout_column="0" />
+        android:textSize="40sp" />
 
     <FrameLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="fill_parent"
-        android:layout_height="527dp">
+        android:layout_height="match_parent">
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton"
+            android:id="@+id/BtnNotas"
             android:layout_gravity="top|left"
             android:background="@drawable/notas" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton2"
+            android:id="@+id/BtnAsistencia"
             android:layout_gravity="center_horizontal|top"
             android:background="@drawable/Asistencia" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton3"
+            android:id="@+id/BtnHorario"
             android:layout_gravity="right|top"
             android:background="@drawable/HORARIO1" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton4"
+            android:id="@+id/BtnCorreo"
             android:layout_gravity="left|center_vertical"
             android:background="@drawable/Mail" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="130dp"
-            android:id="@+id/imageButton6"
+            android:id="@+id/BtnPagos"
             android:layout_gravity="right|center_vertical"
             android:background="@mipmap/Pagos" />
 
