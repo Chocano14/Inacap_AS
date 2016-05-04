@@ -15,9 +15,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuPrincipal">
-
+        <activity
+            android:name=".MenuPrincipal">
         </activity>
+        <activity
+            android:name=".MenuNot">
+        </activity>
+        <activity
+            android:name=".MenuAsist">
+        </activity>
+        <activity
+            android:name=".MenuHora">
+        </activity>
+        <activity
+            android:name=".MenuCorr">
+        </activity>
+        <activity
+            android:name=".MenuBusque">
+        </activity>
+        <activity
+            android:name=".MenuAlarm">
+        </activity>
+        <activity
+            android:name=".MenuResumen">
+        </activity>
+        <activity
+            android:name=".MenuPagos">
+        </activity>
+        <activity
+            android:name=".Menu_Materiales">
+        </activity>
+
     </application>
 
 </manifest>
