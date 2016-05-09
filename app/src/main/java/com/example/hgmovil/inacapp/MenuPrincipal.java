@@ -59,7 +59,7 @@ public class MenuPrincipal extends AppCompatActivity {
                 startActivity(formnuevo1);
             }
         });
-         BtnCorr = (ImageButton) findViewById(R.id.BtnCorreo);
+         BtnCorr = (ImageButton) findViewById(R.id.BtnCorreos);
         BtnCorr.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {

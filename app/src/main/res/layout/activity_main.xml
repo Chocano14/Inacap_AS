@@ -43,21 +43,22 @@
         android:layout_height="190dp"
         android:id="@+id/imageView"
         android:background="@drawable/nacap"
-        android:layout_above="@+id/txtRut"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp" />
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Inacap"
+        android:text="Bienvenidos"
         android:id="@+id/textView2"
-        android:layout_marginBottom="40dp"
-        android:layout_above="@+id/txtRut"
-        android:layout_centerHorizontal="true"
         android:textColor="#ff0000"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
 
 
 </RelativeLayout>
