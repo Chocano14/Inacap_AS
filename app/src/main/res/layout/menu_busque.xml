@@ -26,4 +26,12 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"/>
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="155dp"
+        android:id="@+id/MapaSala"
+        android:background="@drawable/apa33"
+        android:visibility="invisible" />
+
 </RelativeLayout>
