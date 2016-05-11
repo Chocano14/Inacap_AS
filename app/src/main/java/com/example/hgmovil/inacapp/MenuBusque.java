@@ -1,5 +1,8 @@
 package com.example.hgmovil.inacapp;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,7 +24,10 @@ public class MenuBusque extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_busque);
         Busacarsala = (Spinner) findViewById(R.id.BuscarSala);
-        imagen =(ImageView) findViewById(R.id.MapaSala); 
+
+        final Matrix matrix = new Matrix();
+        matrix.postRotate(90.0f);
+
         ArrayAdapter<String> adaptador =new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Salas);
         Busacarsala.setAdapter(adaptador);
         Busacarsala.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
@@ -32,7 +38,11 @@ public class MenuBusque extends AppCompatActivity
                 switch (t)
                 {
                     case 1:
-                        imagen.setVisibility(View.VISIBLE);
+                        Bitmap original = BitmapFactory.decodeResource(getResources(), R.drawable.apa33);
+                        Bitmap rotatedBitmap = Bitmap.createBitmap(original, 0, 0, original.getWidth(), original.getHeight(), matrix, true);
+                        ImageView imgRotate = (ImageView) findViewById(R.id.MapaSala);
+                        imgRotate.setImageBitmap(rotatedBitmap);
+                        imgRotate.setVisibility(View.VISIBLE);
 
                         break;
                     case 2:

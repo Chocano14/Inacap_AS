@@ -7,43 +7,58 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"
+                    android:screenOrientation="portrait"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"
+                    android:screenOrientation="portrait"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".MenuPrincipal">
+            android:name=".MenuPrincipal"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuNot">
+            android:name=".MenuNot"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuAsist">
+            android:name=".MenuAsist"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuHora">
+            android:name=".MenuHora"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuCorr">
+            android:name=".MenuCorr"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuBusque">
+            android:name=".MenuBusque"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuAlarm">
+            android:name=".MenuAlarm"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuResumen">
+            android:name=".MenuResumen"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MenuPagos">
+            android:name=".MenuPagos"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".Menu_Materiales">
+
+            android:name=".Menu_Materiales"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>
