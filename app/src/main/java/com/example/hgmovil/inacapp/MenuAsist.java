@@ -37,9 +37,9 @@ public class MenuAsist extends AppCompatActivity
 
                 final AlertDialog.Builder asitencias = new AlertDialog.Builder(MenuAsist.this);
                 asitencias.setTitle("Asistencia Matematicas 1");
-                asitencias.setMessage("Total Horas Planificadas en la Asignatura: 70 Horas" +
-                        "Total Horas Realizadas en la Asignatura: 40 Horas" +
-                        "Total Horas Asistidas en la Asignatura: 39 Horas" +
+                asitencias.setMessage("Total Horas Asignatura: 70 Horas" +"\n"+
+                        "Total Horas Realizadas: 40 Horas"+"\n" +
+                        "Total Horas Asistidas: 39 Horas"+"\n" +
                         "Porcentaje de asistencia : 51,43%");
                 asitencias.setPositiveButton("Aceptar", new DialogInterface.OnClickListener()
                 {
