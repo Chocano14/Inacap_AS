@@ -7,7 +7,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -20,10 +23,15 @@ public class MenuNot extends AppCompatActivity
 {
     private Spinner Listnota;
     String[] ramos = {"Seleccionar Asignatura","Base de datos","Matematicas 1"};
+    private RelativeLayout tabNot;
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_notas);
+
+        tabNot = (RelativeLayout) findViewById(R.id.TablaNotas);
+
+
         Listnota = (Spinner) findViewById(R.id.ListaNot);
         ArrayAdapter<String> adaptador =new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,ramos);
         Listnota.setAdapter(adaptador);
@@ -35,8 +43,9 @@ public class MenuNot extends AppCompatActivity
                 {
 
                     case 1:
-                        Toast to = Toast.makeText(getApplicationContext(),"Mostrar notas 2",Toast.LENGTH_LONG);
-                        to.show();
+                        tabNot.setVisibility(View.VISIBLE);
+
+
                         break;
                     case 2:
                         Toast t = Toast.makeText(getApplicationContext(),"Mostrar notas 3",Toast.LENGTH_LONG);
