@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 String rutUsuario = Rut.getText().toString();
                 String ConUsuario = Contraseña.getText().toString();
-                if (rutUsuario.equals("18578099-6")&& ConUsuario.equals("1234567"))
+                if (rutUsuario.equals("12345678-9")&& ConUsuario.equals("1234567"))
                 {
                     Intent nuevoform = new Intent(MainActivity.this,MenuPrincipal.class);
                     startActivity(nuevoform);
