@@ -12,7 +12,7 @@ public class Correo_Redactar extends AppCompatActivity
 {
     private Spinner SelecProfes;
     String[] Profes = {"Seleccionar profesor","Barria Flores Marcelo Orlando","González Escobar Oscar Hernán","González Oyarzún Claudio Roberto",
-    "Moya Bascur Cristhian Andrés","Quezada Contreras Armin Wilson","Soto Alarcon Cesar Bernardo"};
+            "Moya Bascur Cristhian Andrés","Quezada Contreras Armin Wilson","Soto Alarcon Cesar Bernardo"};
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);

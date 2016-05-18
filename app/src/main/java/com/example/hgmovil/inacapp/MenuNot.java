@@ -35,6 +35,7 @@ public class MenuNot extends AppCompatActivity
         Listnota = (Spinner) findViewById(R.id.ListaNot);
         ArrayAdapter<String> adaptador =new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,ramos);
         Listnota.setAdapter(adaptador);
+
         Listnota.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int i, long id)

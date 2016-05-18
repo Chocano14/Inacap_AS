@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,7 +7,146 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Mis Materiales"
+        android:text="Materiales"
         android:id="@+id/textView11"
-        android:layout_gravity="center_horizontal" />
-</LinearLayout>
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnMate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spnMate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/RelMat"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="> Unidad 1"
+            android:id="@+id/textView101"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="> Unidad 2"
+            android:id="@+id/textView102"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_marginTop="116dp"
+            android:layout_below="@+id/textView101"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="> Unidad 3"
+            android:id="@+id/textView103"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_below="@+id/textView102"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="106dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView7"
+            android:background="@drawable/ppt"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/textView101"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SGSI"
+            android:id="@+id/textView104"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_toEndOf="@+id/imageView7"
+            android:textColor="#0008ff" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView8"
+            android:background="@drawable/word"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/textView101"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Analisis y Gestion"
+            android:id="@+id/textView105"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView8"
+            android:textColor="#0008ff" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView9"
+            android:background="@drawable/pdf"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/textView101"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ISO 27000"
+            android:id="@+id/textView106"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/imageView9"
+            android:layout_toRightOf="@+id/imageView9"
+            android:layout_toEndOf="@+id/imageView9"
+            android:textColor="#0008ff" />
+    </RelativeLayout>
+
+</RelativeLayout>
