@@ -13,7 +13,8 @@ import android.widget.Toast;
 /**
  * Created by pablo on 27-04-2016.
  */
-public class MenuPrincipal extends AppCompatActivity {
+public class MenuPrincipal extends AppCompatActivity
+{
     private ImageButton BtnNot;
     private ImageButton BtnAsis;
     private ImageButton BtnHora;

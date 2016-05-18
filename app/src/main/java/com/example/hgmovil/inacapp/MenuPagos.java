@@ -18,10 +18,5 @@ public class MenuPagos extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_pagos);
-
-
-
-
-
     };
 }

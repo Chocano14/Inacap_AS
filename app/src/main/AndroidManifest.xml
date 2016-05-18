@@ -60,7 +60,21 @@
             android:name=".Menu_Materiales"
             android:screenOrientation="portrait">
         </activity>
+        <activity
 
+            android:name=".Correo_Recibido"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
+            android:name=".Correo_Enviado"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
+            android:name=".Correo_Redactar"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
