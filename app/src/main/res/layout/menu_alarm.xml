@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:hint="Ingresar texto de alarma"
         android:inputType="text"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="57dp"
 
         android:layout_below="@+id/textView8"
         android:layout_centerHorizontal="true" />/>
@@ -44,13 +44,14 @@
         android:layout_height="wrap_content"
         android:hint="Crear Alarma"
         android:id="@+id/btnCAlarma"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
 
         android:background="#ff0000"
         android:textColor="#ffffff"
         android:text="Aceptar"
-        android:onClick="onClickAcptar" />
+        android:onClick="onClickAcptar"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/txtHoraAlar"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -61,7 +62,8 @@
         android:hint="Ingresar Hora"
         android:textAlignment="center"
         android:layout_below="@+id/txtFechaAlar"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/txtTxAlar"
+        android:layout_alignStart="@+id/txtTxAlar" />
 
     <Button
         android:layout_width="20dp"

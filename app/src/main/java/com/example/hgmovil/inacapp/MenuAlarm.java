@@ -53,6 +53,7 @@ public class MenuAlarm extends AppCompatActivity
         dia = calendario.get(Calendar.DAY_OF_MONTH);
 
 
+
         mostraFecha();
         SelectFecha = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -68,21 +69,24 @@ public class MenuAlarm extends AppCompatActivity
 
     };
 
-    public void onClickHora(View v) {
-        if (v == btnHoras) {
+    public void onClickHora(View v)
+    {
+        if (v == btnHoras)
+        {
 
-            // Process to get Current Time
+
             final Calendar c = Calendar.getInstance();
             mHour = c.get(Calendar.HOUR_OF_DAY);
             mMinute = c.get(Calendar.MINUTE);
 
-            // Launch Time Picker Dialog
+
             TimePickerDialog tpd = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
 
                         @Override
                         public void onTimeSet(TimePicker view, int hourOfDay,
-                                              int minute) {
-                            // Display Selected time in textbox
+                                              int minute)
+                        {
+
                             horaAlarm.setText(hourOfDay + ":" + minute);
                         }
                     }, mHour, mMinute, false);
@@ -127,7 +131,8 @@ public class MenuAlarm extends AppCompatActivity
                         "Hora de Alarma:"+mHour+":"+ mMinute);
                 asitencias.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                    public void onClick(DialogInterface dialog, int which)
+                    {
 
                     }
                 });
