@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity
                     public void onResponse(String response)
                     {
                         String token = response;
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                     }
                 }, new Response.ErrorListener() {
                     @Override
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity
 
                 };
 
-                mRequestQueue.add(array);
+                mRequestQueue.add(request);
 
 
             }
